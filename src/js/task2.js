@@ -7,7 +7,7 @@ const users = [
 
 const logger = (updatedUsers) => console.table(updatedUsers);
 
-serState(users, "Lux", logger2);
+toggleUserState(users, "Lux", logger2);
 const toggleUserState = (allUsers, userName) => {
   const updatedUsers = allUsers.map((user) =>
     user.name === userName ? { ...user, active: !user.active } : user
