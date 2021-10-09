@@ -24,10 +24,6 @@ const logError = (id) => {
   console.warn(`Error processing transaction ${id}. Please try again later.`);
 };
 
-const logSuccess111 = (id, time) => {
-  console.log(` ${id} processed in ${time}ms`);
-};
-
 makeTransaction({ id: 70, amount: 150 }).then(logSuccess).catch(logError);
 
 makeTransaction({ id: 71, amount: 230 }).then(logSuccess).catch(logError);
